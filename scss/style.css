@@ -1504,4 +1504,33 @@ footer {
   .last .btn svg {
     scale: 1.5;
   }
+}
+.whatsup {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 10;
+}
+.whatsup span, .whatsup a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.251);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.whatsup span i, .whatsup a i {
+  transition: 0.2s;
+  font-size: 1.8em;
+  color: #0CC143;
+}
+.whatsup span:hover, .whatsup a:hover {
+  background-color: #8c6849;
+}
+.whatsup span:hover i, .whatsup a:hover i {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
