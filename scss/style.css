@@ -1565,4 +1565,8 @@ footer {
 }
 .whatsup span:hover i, .whatsup a:hover i {
   color: #fff;
+}
+
+.mt20 {
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */
