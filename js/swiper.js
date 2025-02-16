@@ -1,14 +1,14 @@
 
 var swiper = new Swiper(".mySwiper", {
   loop: true,
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 10,
   // autoplay: {
   //   delay: 1500,
   //   disableOnInteraction: false,
   // },
   breakpoints: {
-    300: {
+    200: {
       slidesPerView: 1,
     },
     575: {
