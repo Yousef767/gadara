@@ -581,6 +581,22 @@ header {
   background-color: #8c6849;
 }
 
+header.header2 {
+  color: #8c6849;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 2px solid #8c6849;
+  font-size: 1.5rem;
+}
+@media (max-width: 600px) {
+  header.header2 {
+    font-size: 1.3rem;
+  }
+}
+
 .whoText {
   display: flex;
   flex-direction: column;
@@ -696,6 +712,10 @@ header {
 .mySwiper {
   width: 100%;
 }
+.mySwiper .swiper-slide {
+  border-radius: 5px;
+  overflow: hidden;
+}
 .mySwiper .swiper-slide .imgCont {
   display: flex;
   justify-content: center;
@@ -716,6 +736,12 @@ header {
   color: #fff;
   font-size: 0.9rem;
   text-align: right;
+  border-radius: 0 0 5px 5px;
+}
+@media (max-width: 600px) {
+  .mySwiper .swiper-slide .imgCont h2 {
+    font-size: 0.8rem;
+  }
 }
 @media (max-width: 500px) {
   .mySwiper .swiper-slide .imgCont {

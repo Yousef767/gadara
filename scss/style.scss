@@ -576,6 +576,19 @@ header {
   background-color: $main;
 }
 
+header.header2{
+  color: $main;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 2px solid $main;
+  font-size: 1.5rem;
+  @media (max-width:600px) {
+    font-size: 1.3rem;
+  }
+}
 .whoText {
   display: flex;
   flex-direction: column;
@@ -673,6 +686,8 @@ header {
 .mySwiper {
   width: 100%;
   .swiper-slide {
+    border-radius: 5px;
+    overflow: hidden;
     .imgCont {
       @include flex();
       position: relative;
@@ -689,7 +704,10 @@ header {
         color: #fff;
         font-size: .9rem;
         text-align: right;
-        // border-radius:0  0  5px 5px ;
+        border-radius:0  0  5px 5px ;
+        @media (max-width:600px) {
+          font-size: .8rem;
+        }
       }
       @media (max-width: 500px) {
         width: 100%;
