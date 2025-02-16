@@ -515,7 +515,7 @@ main {
     @include flex();
     position: relative;
     width: 500px;
-    height: 450px;
+    height: 350px;
     overflow: hidden;
     border-radius: 7px;
     border: 1px solid $main;
@@ -650,7 +650,7 @@ header {
   .nextBtn {
     position: absolute;
     right: -25px;
-    top: calc(50% - 20px);
+    top: calc(50% + 20px);
     @media (max-width:1350px) {
       right: 20px;
     }
@@ -661,7 +661,7 @@ header {
   .prevBtn {
     position: absolute;
     left: -25px;
-    top: calc(50% - 20px);
+    top: calc(50% + 20px);
     @media (max-width:1350px) {
       left: 20px;
     }
@@ -682,13 +682,14 @@ header {
       h2{
         position: absolute;
         z-index: 5;
-        bottom: 0;
-        right: 0;
+        right: 0;width: 100%;
+        bottom: 0px;
         padding: 5px 20px;
         background-color: $main;
         color: #fff;
-        font-size: 1rem;
-        border-radius: 5px 0 5px 0 ;
+        font-size: .9rem;
+        text-align: right;
+        // border-radius:0  0  5px 5px ;
       }
       @media (max-width: 500px) {
         width: 100%;
@@ -1390,14 +1391,20 @@ footer {
 }
 .steps {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   flex-wrap: wrap;
   padding: 0 !important;
+  justify-content: center;
+  // .step{
+  //   &:last-child{
+  //     flex-grow: 0;
+  //   }
+  // }
 }
 .step {
   display: flex;
   gap: 10px;
-  padding: 15px 20px;
+  padding: 13px 20px;
   width: fit-content;
   flex-grow: 1;
   border-radius: 10px;
@@ -1405,6 +1412,7 @@ footer {
   justify-content: center;
   align-items: center;
   transition: 0.3s all ease;
+  text-align: right;
   cursor: pointer;
   &:hover {
     background-color: $dark-main;
@@ -1517,4 +1525,14 @@ footer {
 }
 .mt20{
   margin-top: 20px;
+}
+.pt50{
+  display: flex;
+  padding-top: 50px !important;
+  justify-content: center;
+  width: 100%;
+  header{
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }

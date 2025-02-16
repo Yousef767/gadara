@@ -3,10 +3,10 @@ var swiper = new Swiper(".mySwiper", {
   loop: true,
   slidesPerView: 4,
   spaceBetween: 10,
-  autoplay: {
-    delay: 1500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 1500,
+  //   disableOnInteraction: false,
+  // },
   breakpoints: {
     300: {
       slidesPerView: 1,
@@ -40,10 +40,10 @@ var swiper2 = new Swiper(".mySwiper2", {
   keyboard: {
     enabled: true,
   },
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: true,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: true,
+  // },
   // pagination: {
   //   el: ".swiper-pagination",
   //   clickable: true,
